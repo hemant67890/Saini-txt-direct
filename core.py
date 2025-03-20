@@ -190,8 +190,18 @@ async def send_doc(bot: Client, m: Message,cc,ka,cc1,prog,count,name):
     os.remove(ka)
     time.sleep(3) 
 
+EMOJIS = ["🦁", "🐶", "🐼", "🐱", "👻", "🐻‍❄️", "☁️", "🌧️", "🦁", "🐠", "🦋", "🐈‍⬛", "🐆", "🐅"]
+emoji_counter = 0  # Initialize a global counter
+
+def get_next_emoji():
+    global emoji_counter
+    emoji = EMOJIS[emoji_counter]
+    emoji_counter = (emoji_counter + 1) % len(EMOJIS)
+    return emoji
+
 
 async def send_vid(bot: Client, m: Message,cc,filename,thumb,name,prog):
+    emoji = get_next_emoji()
     subprocess.run(f'ffmpeg -i "{filename}" -ss 00:01:00 -vframes 1 "{filename}.jpg"', shell=True)
     await prog.delete (True)
     reply = await m.reply_text(f"<pre><code>**★彡 ᵘᵖˡᵒᵃᵈⁱⁿᵍ 彡★ ...⏳**</code></pre>\n<pre><code>**📚𝐓𝐢𝐭𝐥𝐞** » `{name}</code></pre>\n<pre><code>✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ 𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎</code></pre>")
@@ -206,6 +216,7 @@ async def send_vid(bot: Client, m: Message,cc,filename,thumb,name,prog):
     dur = int(duration(filename))
 
     start_time = time.time()
+    processing_msg = await m.reply_text(emoji)
 
     try:
         await m.reply_video(filename,caption=cc, supports_streaming=True,height=720,width=1280,thumb=thumbnail,duration=dur, progress=progress_bar,progress_args=(reply,start_time))
