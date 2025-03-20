@@ -658,6 +658,7 @@ async def txt_handler(bot: Client, m: Message):
                            f"<pre><code>🍁𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}p</code></pre>\n" \
                            f"🔗𝐋𝐢𝐧𝐤 » `{link0}`\n" \
                            f"<pre><code>✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ `𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎🐦`</code></pre>"
+                    emoji_message = await show_random_emojis(message)
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
@@ -945,6 +946,7 @@ async def text_handler(bot: Client, m: Message):
                 else:
                     emoji_message = await show_random_emojis(message)
                     Show = f"<pre><code>**⚡Dᴏᴡɴʟᴏᴀᴅ Sᴛᴀʀᴛᴇᴅ...⏳**</code></pre>\n🔗𝐋𝐢𝐧𝐤 » `{link}`\n<pre><code>✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ `🇸‌🇦‌🇮‌🇳‌🇮‌🐦`</code></pre>"
+                    emoji_message = await show_random_emojis(message)
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
