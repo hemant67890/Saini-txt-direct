@@ -529,12 +529,12 @@ async def txt_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:  
-                cc = f'**——— ✦  {str(count).zfill(3)} ✦ ———**\n\n🎞️𝐓𝐢𝐭𝐥𝐞 » `{name1}` **[{res}]**.mp4\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `{CR}`\n'
-                cc1 = f'**——— ✦  {str(count).zfill(3)} ✦ ———**\n\n📕𝐓𝐢𝐭𝐥𝐞 » `{name1}` .pdf\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `{CR}`\n'
-                cczip = f'**——— ✦  {str(count).zfill(3)} ✦ ———**\n\n📁𝐓𝐢𝐭𝐥𝐞 » `{name1}` .zip\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `{CR}`\n'  
-                ccimg = f'**——— ✦  {str(count).zfill(3)} ✦ ———**\n\n🖼️𝐓𝐢𝐭𝐥𝐞 » `{name1}` .jpg\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `{CR}`\n'
-                cccpvod = f'**——— ✦  {str(count).zfill(3)} ✦ ———**\n\n🎞️𝐓𝐢𝐭𝐥𝐞 » `{name1}` .mp4\n\n<a href="{urlcpvod}">__**Click Here to Watch Stream**__</a>\n🔗𝐋𝐢𝐧𝐤 » {link0}\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `{CR}`\n'
-                ccyt = f'**——— ✦  {str(count).zfill(3)} ✦ ———**\n\n🎞️𝐓𝐢𝐭𝐥𝐞 » `{name1}` .mp4\n\n<a href="{url}">__**Click Here to Watch Stream**__</a>\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `{CR}`\n'
+                cc = f' **╭━━━━━━━━━━━╮**\n**➭ 𝐈𝐧𝐝𝐞𝐱 » {str(count).zfill(3)}**\n╰━━━━━━━━━━━╯ **\n**➭ 🎞️𝐓𝐢𝐭𝐥𝐞 »  {name1} **[{res}]**.mp4**\n**➭ 📚𝐁𝐚𝐭𝐜𝐡 » {b_name} **\n**➭ 📹𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}**\n\n✨ **𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 : {CR}**\n**━━━━━━━━━━✦✗✦━━━━━━━━━━**'
+                cc1 = f' **╭━━━━━━━━━━━╮**\n**➭ 𝐈𝐧𝐝𝐞𝐱 » {str(count).zfill(3)}**\n╰━━━━━━━━━━━╯ **\n**➭ 🎞️𝐓𝐢𝐭𝐥𝐞 »  {name1} **[{res}]**.pdf**\n**➭ 📚𝐁𝐚𝐭𝐜𝐡 » {b_name} **\n**➭ 📹𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}**\n\n✨ **𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 : {CR}**\n**━━━━━━━━━━✦✗✦━━━━━━━━━━**'
+                cczip = f' **╭━━━━━━━━━━━╮**\n**➭ 𝐈𝐧𝐝𝐞𝐱 » {str(count).zfill(3)}**\n╰━━━━━━━━━━━╯ **\n**➭ 🎞️𝐓𝐢𝐭𝐥𝐞 »  {name1} **[{res}]**.zip**\n**➭ 📚𝐁𝐚𝐭𝐜𝐡 » {b_name} **\n**➭ 📹𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}**\n\n✨ **𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 : {CR}**\n**━━━━━━━━━━✦✗✦━━━━━━━━━━**'
+                ccimg = f' **╭━━━━━━━━━━━╮**\n**➭ 𝐈𝐧𝐝𝐞𝐱 » {str(count).zfill(3)}**\n╰━━━━━━━━━━━╯ **\n**➭ 🎞️𝐓𝐢𝐭𝐥𝐞 »  {name1} **[{res}]**.jpg**\n**➭ 📚𝐁𝐚𝐭𝐜𝐡 » {b_name} **\n**➭ 📹𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}**\n\n✨ **𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 : {CR}**\n**━━━━━━━━━━✦✗✦━━━━━━━━━━**'
+                ccyt = f' **╭━━━━━━━━━━━╮**\n**➭ 𝐈𝐧𝐝𝐞𝐱 » {str(count).zfill(3)}** y\n╰━━━━━━━━━━━╯ **\n**➭ 🎞️𝐓𝐢𝐭𝐥𝐞 »  {name1} **[{res}]**.mp4**\n<a href="{url}">__**Click Here to Watch Stream**__</a>**\n**➭ 📚𝐁𝐚𝐭𝐜𝐡 » {b_name} **\n**➭ 📹𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}**\n\n✨ **𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 : {CR}**\n**━━━━━━━━━━✦✗✦━━━━━━━━━━**'
+                cccpvod = f' **╭━━━━━━━━━━━╮**\n**➭ 𝐈𝐧𝐝𝐞𝐱 » {str(count).zfill(3)}**\n╰━━━━━━━━━━━╯ **\n**➭ 🎞️𝐓𝐢𝐭𝐥𝐞 »  {name1} **[{res}]**.mp4\n<a href="{urlcpvod}">__**Click Here to Watch Stream**__</a>\n🔗𝐋𝐢𝐧𝐤 » {link0}**\n**➭ 📚𝐁𝐚𝐭𝐜𝐡 » {b_name} **\n**➭ 📹𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}**\n\n✨ **𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 : {CR}**\n**━━━━━━━━━━✦✗✦━━━━━━━━━━**'
                                  
                 if "drive" in url:
                     try:
@@ -650,14 +650,14 @@ async def txt_handler(bot: Client, m: Message):
                     remaining_links = len(links) - count
                     progress = (count / len(links)) * 100
                     emoji_message = await show_random_emojis(message)
-                    Show = f"<pre><code>**⚡𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝐒𝐭𝐚𝐫𝐭𝐞𝐝...⏳**</code></pre>\n" \
-                           f"<pre><code>🚀𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬 » {progress:.2f}%</code></pre>\n" \
-                           f"<pre><code>🔗𝐈𝐧𝐝𝐞𝐱 » {str(count)}/{len(links)}</code></pre>\n" \
-                           f"<pre><code>🖇️𝐑𝐞𝐦𝐚𝐢𝐧𝐢𝐧𝐠 𝐋𝐢𝐧𝐤𝐬 » {remaining_links}</code></pre>\n" \
+                    Show = f"**⚡𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝐒𝐭𝐚𝐫𝐭𝐞𝐝...⏳**\n" \
+                           f"🚀𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬 » {progress:.2f}%\n" \
+                           f"🔗𝐈𝐧𝐝𝐞𝐱 » {str(count)}/{len(links)}\n" \
+                           f"🖇️𝐑𝐞𝐦𝐚𝐢𝐧𝐢𝐧𝐠 𝐋𝐢𝐧𝐤𝐬 » {remaining_links}\n" \
                            f"📚𝐓𝐢𝐭𝐥𝐞 » `{name}`\n" \
-                           f"<pre><code>🍁𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}p</code></pre>\n" \
+                           f"🍁𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}p\n" \
                            f"🔗𝐋𝐢𝐧𝐤 » `{link0}`\n" \
-                           f"<pre><code>✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ `𝘴𝘴ᥴ ᭙ꪖꪶꪖ🐦`</code></pre>"
+                           f"✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ `𝘴𝘴ᥴ ᭙ꪖꪶꪖ🐦`"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
@@ -669,7 +669,7 @@ async def txt_handler(bot: Client, m: Message):
 
             except Exception as e:
                 await m.reply_text(
-                    f"<pre><code>⚠️ 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝐈𝐧𝐭𝐞𝐫𝐮𝐩𝐭𝐞𝐝</code></pre>\n⚠️ 𝐓𝐢𝐭𝐥𝐞 » `{name}`\n\n🔗𝐋𝐢𝐧𝐤 » `{link0}`\n<pre><code>✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ `𝘴𝘴ᥴ ᭙ꪖꪶꪖ🐦`</code></pre>"
+                    f"⚠️ 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝐈𝐧𝐭𝐞𝐫𝐮𝐩𝐭𝐞𝐝\n⚠️ 𝐓𝐢𝐭𝐥𝐞 » `{name}`\n\n🔗𝐋𝐢𝐧𝐤 » `{link0}`\n✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ `𝘴𝘴ᥴ ᭙ꪖꪶꪖ🐦`"
                 )
                 count += 1
                 continue
