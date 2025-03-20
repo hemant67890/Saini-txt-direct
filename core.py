@@ -190,7 +190,7 @@ async def send_doc(bot: Client, m: Message,cc,ka,cc1,prog,count,name):
     os.remove(ka)
     time.sleep(3) 
 
-EMOJIS = ["🦁", "🐶", "🐼", "🐱", "👻", "🐻‍❄️", "☁️", "🌧️", "🦁", "🐠", "🦋", "🐈‍⬛", "🐆", "🐅"]
+EMOJIS = ["🐼", "🐶", "⚡️", "🚀", "🌟", "🔥", "✨", "🦁", "🐱", "👻", "🐻‍❄️", "☁️", "🌧️", "🐠", "🦋", "🐈‍⬛", "🐆", "🐅"]
 emoji_counter = 0  # Initialize a global counter
 
 def get_next_emoji():
