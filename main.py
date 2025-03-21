@@ -650,14 +650,16 @@ async def txt_handler(bot: Client, m: Message):
                     remaining_links = len(links) - count
                     progress = (count / len(links)) * 100
                     emoji_message = await show_random_emojis(message)
-                    Show = f"**⚡𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝐒𝐭𝐚𝐫𝐭𝐞𝐝...⏳**\n" \
-                           f"🚀𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬 » {progress:.2f}%\n" \
-                           f"🔗𝐈𝐧𝐝𝐞𝐱 » {str(count)}/{len(links)}\n" \
-                           f"🖇️𝐑𝐞𝐦𝐚𝐢𝐧𝐢𝐧𝐠 𝐋𝐢𝐧𝐤𝐬 » {remaining_links}\n" \
-                           f"📚𝐓𝐢𝐭𝐥𝐞 » `{name}`\n" \
-                           f"🍁𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}p\n" \
-                           f"🔗𝐋𝐢𝐧𝐤 » `{link0}`\n" \
-                           f"✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ `𝘴𝘴ᥴ ᭙ꪖꪶꪖ🐦`"
+                    Show = f"'╔════❰ᴘʀᴏɢʀᴇss ʙᴀʀ❱══════⊱ \n
+                              ║╭━━━━━━━━━━━━━━━➣\n
+                              ║┣ ♻️ Index » {str(count)}/{len(links)}\n
+                              ║┣ 📚 Title » `{name}`n
+                              ║┣ 🖇️ Remaining Links » {remaining_links} \n
+                              ║┣ 🚀 Progress » {progress:.2f}%\n
+                              ║┣ 🎥 Quality » {raw_text2}p\n
+                              ║┣ 🔗 Link » `{link0}` \n
+                              ║╰━━━━━━━━━━━━━━━➣\n
+                              ╚═⌈ ✦𝙱ɪ𝚜ʜɴᴏɪ™ ˢˢᶜ ʷᵃˡᵃ~✦ ⌋─━━➣⚡⌋'"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
