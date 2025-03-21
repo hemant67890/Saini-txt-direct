@@ -650,7 +650,7 @@ async def txt_handler(bot: Client, m: Message):
                     remaining_links = len(links) - count
                     progress = (count / len(links)) * 100
                     emoji_message = await show_random_emojis(message)
-                    Show = f"'╔════❰ᴘʀᴏɢʀᴇss ʙᴀʀ❱══════⊱ \n
+                    Show = f"'╔════❰✦ᴅᴏᴡɴʟᴏᴀᴅ ʙᴀʀ✦❱══════⊱ \n
                               ║╭━━━━━━━━━━━━━━━➣\n
                               ║┣ ♻️ Index » {str(count)}/{len(links)}\n
                               ║┣ 📚 Title » `{name}`n
