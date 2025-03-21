@@ -93,9 +93,8 @@ async def progress_bar(current, total, reply, start):
             symbol_pairs = [
                 ("▬", "▭"),
                 ("▰", "▱"),
-                ("▮", "▯"),
                 ("◆", "◇"),
-                ("▓", "▒")
+                ("■", "□")
             ]
             chosen_pair = random.choice(symbol_pairs)
             completed_symbol, remaining_symbol = chosen_pair
@@ -103,6 +102,6 @@ async def progress_bar(current, total, reply, start):
             progress_bar = completed_symbol * completed_length + remaining_symbol * remaining_length
             
             try:
-                await reply.edit(f'`╭───💥 𝗨𝗣𝗟𝗢𝗔𝗗𝗘𝗥 💥───╮   \n├⚡ {progress_bar} \n├🧲 𝗦𝗶𝘇𝗲 ➠ {tot} \n├🚀 𝗦𝗽𝗲𝗲𝗱 ➠ {sp} \n├🗂️ 𝗟𝗼𝗮𝗱𝗲𝗱 ➠ {perc} \n├📟 𝗣𝗿𝗼𝗴𝗿𝗲𝘀𝘀 ➠ {cur} \n├🧭 𝗘𝗧𝗔 ➠ {eta}\n╰─── 『 𝐁𝐢𝐬𝐡𝐧𝐨𝐢 ™』❤️ ───╯`') 
+                await reply.edit(f'`╔════❰ᴘʀᴏɢʀᴇss ʙᴀʀ❱══════⊱ \n║╭━━━━━━━━━━━━━━━➣\n║┣ ⚡ [{progress_bar}]\n║┣ 🧲 Percent : {perc}\n║┣ 🚀 sᴘᴇᴇᴅ : {sp} \n║┣ 📟 ᴘʀᴏᴄᴇssᴇᴅ : {cur}\n║┣ 💾 sɪᴢᴇ : {tot}\n║┣ 🧭 ᴇᴛᴀ : {eta} \n║╰━━━━━━━━━━━━━━━➣\n╚═⌈ 𝐁𝐢𝐬𝐡𝐧𝐨𝐢 ™~⌋─━━➣⚡⌋`') 
             except FloodWait as e:
                 time.sleep(e.x)
