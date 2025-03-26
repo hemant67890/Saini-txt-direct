@@ -527,8 +527,8 @@ async def txt_handler(bot: Client, m: Message):
                 cc1 = f'{str(count).zfill(3)}\n\n𝚃𝚒𝚝𝚕𝚎 » `{name1}` .pdf\n\n𝙲𝚘𝚞𝚛𝚜𝚎 : {b_name}\n\n𝙴𝚡𝚝𝚛𝚊𝚌𝚝𝚎𝚍 𝙱𝚢 » {CR}\n'
                 cczip = f'{str(count).zfill(3)}\n\n𝚃𝚒𝚝𝚕𝚎 » `{name1}` .zip\n\n𝙲𝚘𝚞𝚛𝚜𝚎 : {b_name}\n\n𝙴𝚡𝚝𝚛𝚊𝚌𝚝𝚎𝚍 𝙱𝚢 » {CR}\n'  
                 ccimg = f'{str(count).zfill(3)}\n\n𝚃𝚒𝚝𝚕𝚎 » `{name1}` .jpg\n\n𝙲𝚘𝚞𝚛𝚜𝚎 : {b_name}\n\n𝙴𝚡𝚝𝚛𝚊𝚌𝚝𝚎𝚍 𝙱𝚢 » {CR}\n'
-                cccpvod = f'{str(count).zfill(3)}\n\n𝚃𝚒𝚝𝚕𝚎 » `{name1}` .mp4\n\n<a href="{urlcpvod}">__**Click Here to Watch Stream**__</a>\n🔗𝐋𝐢𝐧𝐤 » {link0}\n\n𝙲𝚘𝚞𝚛𝚜𝚎 : {b_name}\n\n𝙴𝚡𝚝𝚛𝚊𝚌𝚝𝚎𝚍 𝙱𝚢 » {CR}\n'
-                ccyt = f'{str(count).zfill(3)}\n\n𝚃𝚒𝚝𝚕𝚎 » `{name1}` .mp4\n\n<a href="{url}">__**Click Here to Watch Stream**__</a>\n\n𝙲𝚘𝚞𝚛𝚜𝚎 : {b_name}\n\n𝙴𝚡𝚝𝚛𝚊𝚌𝚝𝚎𝚍 𝙱𝚢 » {CR}\n'
+                cccpvod = f'{str(count).zfill(3)}\n\n𝚃𝚒𝚝𝚕𝚎 » `{name1}` .mp4\n\n<a href="{urlcpvod}">__**𝙲𝚕𝚒𝚌𝚔 𝙷𝚎𝚛𝚎 𝚝𝚘 𝚆𝚊𝚝𝚌𝚑 𝚂𝚝𝚛𝚎𝚊𝚖**__</a>\n𝙻𝚒𝚗𝚔 » {link0}\n\n𝙲𝚘𝚞𝚛𝚜𝚎 : {b_name}\n\n𝙴𝚡𝚝𝚛𝚊𝚌𝚝𝚎𝚍 𝙱𝚢 » {CR}\n'
+                ccyt = f'{str(count).zfill(3)}\n\n𝚃𝚒𝚝𝚕𝚎 » `{name1}` .mp4\n\n<a href="{url}">__**𝙲𝚕𝚒𝚌𝚔 𝙷𝚎𝚛𝚎 𝚝𝚘 𝚆𝚊𝚝𝚌𝚑 𝚂𝚝𝚛𝚎𝚊𝚖**__</a>\n\n𝙲𝚘𝚞𝚛𝚜𝚎 : {b_name}\n\n𝙴𝚡𝚝𝚛𝚊𝚌𝚝𝚎𝚍 𝙱𝚢 » {CR}\n'
                                  
                 if "drive" in url:
                     try:
