@@ -407,9 +407,9 @@ async def txt_handler(bot: Client, m: Message):
     raw_text3 = input3.text
     await input3.delete(True)
     # Default credit message with link
-    credit = "️[𝙸𝙿𝙻™ 🦁](https://i.ibb.co/56QnPWX/file-7074.jpg)"
+    credit = "️[𝙸𝙿𝙻™ 🦁](https://i.ibb.co/bjwFMrKs/file-4125596.jpg)"
     if raw_text3 == '1':
-        CR = '[𝙸𝙿𝙻™ 🦁](https://i.ibb.co/56QnPWX/file-7074.jpg)'
+        CR = '[𝙸𝙿𝙻™ 🦁](https://i.ibb.co/bjwFMrKs/file-4125596.jpg)'
     elif raw_text3:
         try:
             text, link = raw_text3.split(',')
@@ -429,7 +429,7 @@ async def txt_handler(bot: Client, m: Message):
     else:
         PW = raw_text4
         
-    await editable.edit("🌅Send ☞ `https://i.ibb.co/56QnPWX/file-7074.jpg` for **Thumbnail**\n\n🎞️Send ☞ `no` for **video** format\n\n📁Send ☞ `No` for **Document** format")
+    await editable.edit("🌅Send ☞ `https://i.ibb.co/bjwFMrKs/file-4125596.jpg` for **Thumbnail**\n\n🎞️Send ☞ `no` for **video** format\n\n📁Send ☞ `No` for **Document** format")
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
     await input6.delete(True)
@@ -523,12 +523,12 @@ async def txt_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:  
-                cc = f'{str(count).zfill(3)}\n\n𝚃𝚒𝚝𝚕𝚎 » `{name1}` **[{res}]**.mp4\n\n𝙲𝚘𝚞𝚛𝚜𝚎 : {b_name}\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » {CR}\n'
-                cc1 = f'{str(count).zfill(3)}\n\n𝚃𝚒𝚝𝚕𝚎 » `{name1}` .pdf\n\n𝙲𝚘𝚞𝚛𝚜𝚎 : {b_name}\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » {CR}\n'
-                cczip = f'{str(count).zfill(3)}\n\n𝚃𝚒𝚝𝚕𝚎 » `{name1}` .zip\n\n𝙲𝚘𝚞𝚛𝚜𝚎 : {b_name}\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » {CR}\n'  
-                ccimg = f'{str(count).zfill(3)}\n\n𝚃𝚒𝚝𝚕𝚎 » `{name1}` .jpg\n\n𝙲𝚘𝚞𝚛𝚜𝚎 : {b_name}\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » {CR}\n'
-                cccpvod = f'{str(count).zfill(3)}\n\n𝚃𝚒𝚝𝚕𝚎 » `{name1}` .mp4\n\n<a href="{urlcpvod}">__**Click Here to Watch Stream**__</a>\n🔗𝐋𝐢𝐧𝐤 » {link0}\n\n𝙲𝚘𝚞𝚛𝚜𝚎 : {b_name}\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » {CR}\n'
-                ccyt = f'{str(count).zfill(3)}\n\n𝚃𝚒𝚝𝚕𝚎 » `{name1}` .mp4\n\n<a href="{url}">__**Click Here to Watch Stream**__</a>\n\n𝙲𝚘𝚞𝚛𝚜𝚎 : {b_name}\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » {CR}\n'
+                cc = f'{str(count).zfill(3)}\n\n𝚃𝚒𝚝𝚕𝚎 » `{name1}` **[{res}]**.mp4\n\n𝙲𝚘𝚞𝚛𝚜𝚎 : {b_name}\n\n𝙴𝚡𝚝𝚛𝚊𝚌𝚝𝚎𝚍 𝙱𝚢 » {CR}\n'
+                cc1 = f'{str(count).zfill(3)}\n\n𝚃𝚒𝚝𝚕𝚎 » `{name1}` .pdf\n\n𝙲𝚘𝚞𝚛𝚜𝚎 : {b_name}\n\n𝙴𝚡𝚝𝚛𝚊𝚌𝚝𝚎𝚍 𝙱𝚢 » {CR}\n'
+                cczip = f'{str(count).zfill(3)}\n\n𝚃𝚒𝚝𝚕𝚎 » `{name1}` .zip\n\n𝙲𝚘𝚞𝚛𝚜𝚎 : {b_name}\n\n𝙴𝚡𝚝𝚛𝚊𝚌𝚝𝚎𝚍 𝙱𝚢 » {CR}\n'  
+                ccimg = f'{str(count).zfill(3)}\n\n𝚃𝚒𝚝𝚕𝚎 » `{name1}` .jpg\n\n𝙲𝚘𝚞𝚛𝚜𝚎 : {b_name}\n\n𝙴𝚡𝚝𝚛𝚊𝚌𝚝𝚎𝚍 𝙱𝚢 » {CR}\n'
+                cccpvod = f'{str(count).zfill(3)}\n\n𝚃𝚒𝚝𝚕𝚎 » `{name1}` .mp4\n\n<a href="{urlcpvod}">__**Click Here to Watch Stream**__</a>\n🔗𝐋𝐢𝐧𝐤 » {link0}\n\n𝙲𝚘𝚞𝚛𝚜𝚎 : {b_name}\n\n𝙴𝚡𝚝𝚛𝚊𝚌𝚝𝚎𝚍 𝙱𝚢 » {CR}\n'
+                ccyt = f'{str(count).zfill(3)}\n\n𝚃𝚒𝚝𝚕𝚎 » `{name1}` .mp4\n\n<a href="{url}">__**Click Here to Watch Stream**__</a>\n\n𝙲𝚘𝚞𝚛𝚜𝚎 : {b_name}\n\n𝙴𝚡𝚝𝚛𝚊𝚌𝚝𝚎𝚍 𝙱𝚢 » {CR}\n'
                                  
                 if "drive" in url:
                     try:
