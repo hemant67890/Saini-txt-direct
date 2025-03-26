@@ -190,11 +190,21 @@ async def send_doc(bot: Client, m: Message,cc,ka,cc1,prog,count,name):
     os.remove(ka)
     time.sleep(3) 
 
+EMOJIS = ["🦁", "🐶", "🐼", "🐱", "👻", "🐻‍❄️", "☁️", "🚹", "🚺", "🐠", "🦋"]
+emoji_counter = 0  # Initialize a global counter
+
+def get_next_emoji():
+    global emoji_counter
+    emoji = EMOJIS[emoji_counter]
+    emoji_counter = (emoji_counter + 1) % len(EMOJIS)
+    return emoji
+
 
 async def send_vid(bot: Client, m: Message,cc,filename,thumb,name,prog):
+    emoji = get_next_emoji()
     subprocess.run(f'ffmpeg -i "{filename}" -ss 00:01:00 -vframes 1 "{filename}.jpg"', shell=True)
     await prog.delete (True)
-    reply = await m.reply_text(f"**★彡 ᵘᵖˡᵒᵃᵈⁱⁿᵍ 彡★ ...⏳**\n\n📚𝐓𝐢𝐭𝐥𝐞 » `{name}`\n\n✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ 𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎🦁")
+    reply = await m.reply_text(f"**🚀 𝐔𝐏𝐋𝐎𝐀𝐃𝐈𝐍𝐆...⏳**\n\n📚𝐓𝐢𝐭𝐥𝐞 » `{name}`\n\n✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ 𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎🦁")
     try:
         if thumb == "no":
             thumbnail = f"{filename}.jpg"
@@ -215,5 +225,6 @@ async def send_vid(bot: Client, m: Message,cc,filename,thumb,name,prog):
     os.remove(filename)
 
     os.remove(f"{filename}.jpg")
+    await processing_msg.delete (True)
     await reply.delete (True)
     
