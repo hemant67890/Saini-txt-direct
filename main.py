@@ -523,7 +523,7 @@ async def txt_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:  
-                cc = f'{str(count).zfill(3)}\n\n𝚃𝚒𝚝𝚕𝚎 » `{name1}` **[{res}]**.mp4\n\n𝙲𝚘𝚞𝚛𝚜𝚎 : {b_name}\n\n𝙴𝚡𝚝𝚛𝚊𝚌𝚝𝚎𝚍 𝙱𝚢 » {CR}\n'
+                cc = f'{str(count).zfill(3)}\n\n𝚃𝚒𝚝𝚕𝚎 » `{name1}` [{res}].mp4\n\n𝙲𝚘𝚞𝚛𝚜𝚎 : {b_name}\n\n𝙴𝚡𝚝𝚛𝚊𝚌𝚝𝚎𝚍 𝙱𝚢 » {CR}\n'
                 cc1 = f'{str(count).zfill(3)}\n\n𝚃𝚒𝚝𝚕𝚎 » `{name1}` .pdf\n\n𝙲𝚘𝚞𝚛𝚜𝚎 : {b_name}\n\n𝙴𝚡𝚝𝚛𝚊𝚌𝚝𝚎𝚍 𝙱𝚢 » {CR}\n'
                 cczip = f'{str(count).zfill(3)}\n\n𝚃𝚒𝚝𝚕𝚎 » `{name1}` .zip\n\n𝙲𝚘𝚞𝚛𝚜𝚎 : {b_name}\n\n𝙴𝚡𝚝𝚛𝚊𝚌𝚝𝚎𝚍 𝙱𝚢 » {CR}\n'  
                 ccimg = f'{str(count).zfill(3)}\n\n𝚃𝚒𝚝𝚕𝚎 » `{name1}` .jpg\n\n𝙲𝚘𝚞𝚛𝚜𝚎 : {b_name}\n\n𝙴𝚡𝚝𝚛𝚊𝚌𝚝𝚎𝚍 𝙱𝚢 » {CR}\n'
