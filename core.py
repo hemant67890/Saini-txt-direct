@@ -215,6 +215,7 @@ async def send_vid(bot: Client, m: Message,cc,filename,thumb,name,prog):
         await m.reply_text(str(e))
 
     dur = int(duration(filename))
+    processing_msg = await m.reply_text(emoji)
 
     start_time = time.time()
 
