@@ -407,9 +407,9 @@ async def txt_handler(bot: Client, m: Message):
     raw_text3 = input3.text
     await input3.delete(True)
     # Default credit message with link
-    credit = "️[𝙸𝙿𝙻™ 🦁](https://t.me/+MdZ2996M2G43MWFl)"
+    credit = "️[𝙸𝙿𝙻™ 🦁](https://i.ibb.co/56QnPWX/file-7074.jpg)"
     if raw_text3 == '1':
-        CR = '[𝙸𝙿𝙻™ 🦁](https://t.me/+MdZ2996M2G43MWFl)'
+        CR = '[𝙸𝙿𝙻™ 🦁](https://i.ibb.co/56QnPWX/file-7074.jpg)'
     elif raw_text3:
         try:
             text, link = raw_text3.split(',')
@@ -429,7 +429,7 @@ async def txt_handler(bot: Client, m: Message):
     else:
         PW = raw_text4
         
-    await editable.edit("🌅Send ☞ `Thumb URL` for **Thumbnail**\n\n🎞️Send ☞ `no` for **video** format\n\n📁Send ☞ `No` for **Document** format")
+    await editable.edit("🌅Send ☞ `https://i.ibb.co/56QnPWX/file-7074.jpg` for **Thumbnail**\n\n🎞️Send ☞ `no` for **video** format\n\n📁Send ☞ `No` for **Document** format")
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
     await input6.delete(True)
