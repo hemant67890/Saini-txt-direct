@@ -407,9 +407,9 @@ async def txt_handler(bot: Client, m: Message):
     raw_text3 = input3.text
     await input3.delete(True)
     # Default credit message with link
-    credit = "️[𝙸𝙿𝙻™ 🦁](https://i.ibb.co/bjwFMrKs/file-4125596.jpg)"
+    credit = "️[𝙸𝙿𝙻™ 🦁](https://ibb.co/xKFzV3vX/jpg)"
     if raw_text3 == '1':
-        CR = '[𝙸𝙿𝙻™ 🦁](https://i.ibb.co/bjwFMrKs/file-4125596.jpg)'
+        CR = '[𝙸𝙿𝙻™ 🦁](https://ibb.co/xKFzV3vX/jpg)'
     elif raw_text3:
         try:
             text, link = raw_text3.split(',')
