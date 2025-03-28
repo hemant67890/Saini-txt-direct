@@ -162,15 +162,15 @@ async def help_handler(client: Client, m: Message):
         "• 🎓 All Non DRM+AES Encrypted URLs\n"
         "• 🎓 MPD URLs if the key is known (e.g., Mpd_url?key=key XX:XX)</code></pre>\n\n"
         "🚀 You are not subscribed to any plan yet!\n\n"
-        "<pre><code>Contact to 𝙸𝙿𝙻™ 🦁 for buy membership.</code></pre>"
+        "<pre><code>Contact to 『Sᴀʏᴇ࿐🐦‍🔥』 for buy membership.</code></pre>"
     ))
 
 @bot.on_message(filters.command(["help"]))
 async def txt_handler(client: Client, m: Message):
     await bot.send_message(m.chat.id, text= (
-        "<pre><code> 🎉Congrats! You are using 𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎:</code></pre>\n┣\n"
+        "<pre><code> 🎉Congrats! You are using 『Sᴀʏᴇ࿐🐦‍🔥』:</code></pre>\n┣\n"
         "┣⪼01. Send /start - To Check Bot \n┣\n"
-        "┣⪼02. Send /saini - for extract txt file\n┣\n"
+        "┣⪼02. Send /Sᴀʏᴇ࿐ - for extract txt file\n┣\n"
         "┣⪼03. Send /y2t - YouTube to .txt Convert\n┣\n"
         "┣⪼04. Send /logs - To see Bot Working Logs\n┣\n"
         "┣⪼05. Send /cookies - To update YT cookies.\n┣\n"
@@ -221,7 +221,7 @@ async def start_command(bot: Client, message: Message):
     random_image_url = random.choice(image_urls)
     caption = (
         "🌟 Welcome Boss😸! 🌟\n\n"
-        "➽ I am Powerful DRM Uploader Bot 📥\n\n➽ 𝐔𝐬𝐞 /drm for use this Bot.\n\n<pre><code> 𝐌𝐚𝐝𝐞 𝐁𝐲 : 𝙸𝙿𝙻™ 🦁</code></pre>"
+        "➽ I am Powerful DRM Uploader Bot 📥\n\n➽ 𝐔𝐬𝐞 /drm for use this Bot.\n\n<pre><code> 𝐌𝐚𝐝𝐞 𝐁𝐲 : 『Sᴀʏᴇ࿐🐦‍🔥』</code></pre>"
     )
     
     await bot.send_photo(
@@ -325,14 +325,14 @@ async def youtube_to_txt(client, message: Message):
     # Remove the temporary text file after sending
     os.remove(txt_file)
 
-@bot.on_message(filters.command(["saini"]) )
+@bot.on_message(filters.command(["Sᴀʏᴇ࿐"]) )
 async def txt_handler(bot: Client, m: Message):
     editable = await m.reply_text(f"<pre><code>🔹Hi I am Poweful TXT Downloader📥 Bot.\n🔹Send me the txt file and wait.</code></pre>")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
     file_name, ext = os.path.splitext(os.path.basename(x))
-    credit = f"𝙸𝙿𝙻™ 🦁"
+    credit = f"『Sᴀʏᴇ࿐🐦‍🔥』"
     pdf_count = 0
     img_count = 0
     zip_count = 0
@@ -402,14 +402,14 @@ async def txt_handler(bot: Client, m: Message):
     except Exception:
             res = "UN"
 
-    await editable.edit("<pre><code>🔹Enter Your Name,Link\n🔹Send 1 for use default</code></pre>")
+    await editable.edit("<pre><code>🔹Enter Your Coaching Name,Link\n🔹Send 1 for use default</code></pre>")
     input3 = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
     # Default credit message with link
-    credit = "️[𝙸𝙿𝙻™ 🦁](https://i.ibb.co/9H8t3CsV/images.jpg)"
+    credit = "️[Mᴜɪʜᴇ Nᴀʜɪ Pᴛᴀ 🦁](https://i.ibb.co/9H8t3CsV/images.jpg)"
     if raw_text3 == '1':
-        CR = '[𝙸𝙿𝙻™ 🦁](https://i.ibb.co/9H8t3CsV/images.jpg)'
+        CR = '[Mᴜɪʜᴇ Nᴀʜɪ Pᴛᴀ 🦁](https://i.ibb.co/9H8t3CsV/images.jpg)'
     elif raw_text3:
         try:
             text, link = raw_text3.split(',')
@@ -523,12 +523,12 @@ async def txt_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:  
-                cc = f'**╭━━━━━━━━━━━╮**\n**[ 🎥 ] Lᴇᴄ ɪᴅ. » {str(count).zfill(3)}**\n**╰━━━━━━━━━━━╯**\n📲 APP NAME » {CR}**\n\**➭Tɪᴛᴛʟᴇ » `{name1}` [{res}].mp4**\n```BATCH NAME » \n\n{b_name}```\n\n**📛 Dᴏᴡɴʟᴏᴀᴅᴇᴅ Bʏ » Sᴀʏᴇ࿐**'
-                cc1 = f'**╭━━━━━━━━━━━╮**\n**[ 📁 ] Pᴅғ ɪᴅ. » {str(count).zfill(3)}**\n**╰━━━━━━━━━━━╯**\n📲 APP NAME » {CR}**\n\**➭Tɪᴛᴛʟᴇ » `{name1}` [{res}].pdf**\n```BATCH NAME » \n\n{b_name}```\n\n**📛 Dᴏᴡɴʟᴏᴀᴅᴇᴅ Bʏ » Sᴀʏᴇ࿐**'
-                cczip = f'**╭━━━━━━━━━━━╮**\n**[ 🎥 ] Lᴇᴄ ɪᴅ. » {str(count).zfill(3)}**\n**╰━━━━━━━━━━━╯**\n📲 APP NAME » {CR}**\n\**➭Tɪᴛᴛʟᴇ » `{name1}` [{res}].zip**\n```BATCH NAME » \n\n{b_name}```\n\n**📛 Dᴏᴡɴʟᴏᴀᴅᴇᴅ Bʏ » Sᴀʏᴇ࿐**'  
-                ccimg = f'**╭━━━━━━━━━━━╮**\n**[ 🎥 ] Lᴇᴄ ɪᴅ. » {str(count).zfill(3)}**\n**╰━━━━━━━━━━━╯**\n📲 APP NAME » {CR}**\n\**➭Tɪᴛᴛʟᴇ » `{name1}` [{res}].jpg**\n```BATCH NAME » \n\n{b_name}```\n\n**📛 Dᴏᴡɴʟᴏᴀᴅᴇᴅ Bʏ » Sᴀʏᴇ࿐**'
-                cccpvod = f'**╭━━━━━━━━━━━╮**\n**[ 🎥 ] Lᴇᴄ ɪᴅ. » {str(count).zfill(3)}**\n**╰━━━━━━━━━━━╯**\n📲 APP NAME » {CR}**\n\**➭Tɪᴛᴛʟᴇ » `{name1}` [{res}].mp4**\n\n<a href="{urlcpvod}">__**𝙲𝚕𝚒𝚌𝚔 𝙷𝚎𝚛𝚎 𝚝𝚘 𝚆𝚊𝚝𝚌𝚑 𝚂𝚝𝚛𝚎𝚊𝚖**__</a>\n𝙻𝚒𝚗𝚔 » {link0}\n\n```BATCH NAME » \n\n{b_name}```\n\n**📛 Dᴏᴡɴʟᴏᴀᴅᴇᴅ Bʏ » Sᴀʏᴇ࿐**'
-                ccyt = f'**╭━━━━━━━━━━━╮**\n**[ 🎥 ] Lᴇᴄ ɪᴅ. » {str(count).zfill(3)}**\n**╰━━━━━━━━━━━╯**\n📲 APP NAME » {CR}**\n\**➭Tɪᴛᴛʟᴇ » `{name1}` [{res}].mp4**\n\n<a href="{url}">__**𝙲𝚕𝚒𝚌𝚔 𝙷𝚎𝚛𝚎 𝚝𝚘 𝚆𝚊𝚝𝚌𝚑 𝚂𝚝𝚛𝚎𝚊𝚖**__</a>\n\n```BATCH NAME » \n\n{b_name}```\n\n**📛 Dᴏᴡɴʟᴏᴀᴅᴇᴅ Bʏ » Sᴀʏᴇ࿐**'
+                cc = f'**╭━━━━━━━━━━━╮**\n**[ 🎥 ] Lᴇᴄ ɪᴅ. »** **{str(count).zfill(3)}**\n**╰━━━━━━━━━━━╯**\n**📲 APP NAME »** **||🔰 {CR}||**\n\n**➭Tɪᴛᴛʟᴇ »** **`{name1}` [{res}].mp4**\n```BATCH NAME » \n{b_name}```\n\n**📛 Dᴏᴡɴʟᴏᴀᴅᴇᴅ Bʏ »** **『Sᴀʏᴇ࿐🐦‍🔥』**'
+                cc1 = f'**╭━━━━━━━━━━━╮**\n**[ 📁 ] Pᴅғ ɪᴅ. »** **{str(count).zfill(3)}**\n**╰━━━━━━━━━━━╯**\n**📲 APP NAME »** **||🔰 {CR}||**\n\n**➭Tɪᴛᴛʟᴇ »** **`{name1}` [{res}].pdf**\n```BATCH NAME » \n{b_name}```\n\n**📛 Dᴏᴡɴʟᴏᴀᴅᴇᴅ Bʏ »** **『Sᴀʏᴇ࿐🐦‍🔥』**'
+                cczip = f'**╭━━━━━━━━━━━╮**\n**[ 🎥 ] Lᴇᴄ ɪᴅ. »** **{str(count).zfill(3)}**\n**╰━━━━━━━━━━━╯**\n**📲 APP NAME »** **||🔰 {CR}||**\n\n**➭Tɪᴛᴛʟᴇ »** **`{name1}` [{res}].zip**\n```BATCH NAME » \n{b_name}```\n\n**📛 Dᴏᴡɴʟᴏᴀᴅᴇᴅ Bʏ »** **『Sᴀʏᴇ࿐🐦‍🔥』**'  
+                ccimg = f'**╭━━━━━━━━━━━╮**\n**[ 🎥 ] Lᴇᴄ ɪᴅ. »** **{str(count).zfill(3)}**\n**╰━━━━━━━━━━━╯**\n**📲 APP NAME »** **||🔰 {CR}||**\n\n**➭Tɪᴛᴛʟᴇ »** **`{name1}` [{res}].jpg**\n```BATCH NAME » \n{b_name}```\n\n**📛 Dᴏᴡɴʟᴏᴀᴅᴇᴅ Bʏ »** **『Sᴀʏᴇ࿐🐦‍🔥』**'
+                cccpvod = f'**╭━━━━━━━━━━━╮**\n**[ 🎥 ] Lᴇᴄ ɪᴅ. »** **{str(count).zfill(3)}**\n**╰━━━━━━━━━━━╯**\n**📲 APP NAME »** **||🔰 {CR}||**\n\n**➭Tɪᴛᴛʟᴇ »** **`{name1}` [{res}].mp4**\n\n<a href="{urlcpvod}">__**𝙲𝚕𝚒𝚌𝚔 𝙷𝚎𝚛𝚎 𝚝𝚘 𝚆𝚊𝚝𝚌𝚑 𝚂𝚝𝚛𝚎𝚊𝚖**__</a>\n𝙻𝚒𝚗𝚔 » {link0}\n\n```BATCH NAME » \n{b_name}```\n\n**📛 Dᴏᴡɴʟᴏᴀᴅᴇᴅ Bʏ »** **『Sᴀʏᴇ࿐🐦‍🔥』**'
+                ccyt = f'**╭━━━━━━━━━━━╮**\n**[ 🎥 ] Lᴇᴄ ɪᴅ. »** **{str(count).zfill(3)}**\n**╰━━━━━━━━━━━╯**\n**📲 APP NAME »** **||🔰 {CR}||**\n\n**➭Tɪᴛᴛʟᴇ »** **`{name1}` [{res}].mp4**\n\n<a href="{url}">__**𝙲𝚕𝚒𝚌𝚔 𝙷𝚎𝚛𝚎 𝚝𝚘 𝚆𝚊𝚝𝚌𝚑 𝚂𝚝𝚛𝚎𝚊𝚖**__</a>\n\n```BATCH NAME » \n{b_name}```\n\n**📛 Dᴏᴡɴʟᴏᴀᴅᴇᴅ Bʏ »** **『Sᴀʏᴇ࿐🐦‍🔥』**'
                                  
                 if "drive" in url:
                     try:
@@ -654,7 +654,7 @@ async def txt_handler(bot: Client, m: Message):
                            f"┣🍁𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}p\n┃\n" \
                            f'┣━🔗𝐋𝐢𝐧𝐤 » <a href="{link0}">__**Click Here to Open Link**__</a>\n┃\n' \
                            f'╰━━🖼️𝐓𝐡𝐮𝐦𝐛𝐧𝐚𝐢𝐥 » <a href="{raw_text6}">__**Thumb View**__</a>\n\n' \
-                           f"✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ `𝙸𝙿𝙻™ 🦁`"
+                           f"✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ `『Sᴀʏᴇ࿐🐦‍🔥』`"
                     prog = await m.reply_text(Show, disable_web_page_preview=True)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
@@ -666,7 +666,7 @@ async def txt_handler(bot: Client, m: Message):
 
             except Exception as e:
                 await m.reply_text(
-                    f'⚠️ 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝐈𝐧𝐭𝐞𝐫𝐮𝐩𝐭𝐞𝐝\n\n⚠️ 𝐓𝐢𝐭𝐥𝐞 » `{name}`\n🔗𝐋𝐢𝐧𝐤 » <a href="`{link0}`">__**Click Here to See Link**__</a>\n\n✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ `𝙸𝙿𝙻™ 🦁`'
+                    f'⚠️ 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝐈𝐧𝐭𝐞𝐫𝐮𝐩𝐭𝐞𝐝\n\n⚠️ 𝐓𝐢𝐭𝐥𝐞 » `{name}`\n🔗𝐋𝐢𝐧𝐤 » <a href="`{link0}`">__**Click Here to See Link**__</a>\n\n✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ `『Sᴀʏᴇ࿐🐦‍🔥』`'
                 )
                 count += 1
                 continue
