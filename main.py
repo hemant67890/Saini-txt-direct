@@ -523,12 +523,12 @@ async def txt_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:  
-                cc = f'**╭━━━━━━━━━━━╮**\n**[ 🎥 ] Lᴇᴄ ɪᴅ. »** **{str(count).zfill(3)}**\n**╰━━━━━━━━━━━╯**\n**📲 APP NAME »** **||🔰 {CR}||**\n\n**➭Tɪᴛᴛʟᴇ »** **`{name1}` [{res}].mp4**\n```BATCH NAME » \n{b_name}```\n\n**📛 Dᴏᴡɴʟᴏᴀᴅᴇᴅ Bʏ »** **『Sᴀʏᴇ࿐🐦‍🔥』**'
-                cc1 = f'**╭━━━━━━━━━━━╮**\n**[ 📁 ] Pᴅғ ɪᴅ. »** **{str(count).zfill(3)}**\n**╰━━━━━━━━━━━╯**\n**📲 APP NAME »** **||🔰 {CR}||**\n\n**➭Tɪᴛᴛʟᴇ »** **`{name1}` [{res}].pdf**\n```BATCH NAME » \n{b_name}```\n\n**📛 Dᴏᴡɴʟᴏᴀᴅᴇᴅ Bʏ »** **『Sᴀʏᴇ࿐🐦‍🔥』**'
-                cczip = f'**╭━━━━━━━━━━━╮**\n**[ 🎥 ] Lᴇᴄ ɪᴅ. »** **{str(count).zfill(3)}**\n**╰━━━━━━━━━━━╯**\n**📲 APP NAME »** **||🔰 {CR}||**\n\n**➭Tɪᴛᴛʟᴇ »** **`{name1}` [{res}].zip**\n```BATCH NAME » \n{b_name}```\n\n**📛 Dᴏᴡɴʟᴏᴀᴅᴇᴅ Bʏ »** **『Sᴀʏᴇ࿐🐦‍🔥』**'  
-                ccimg = f'**╭━━━━━━━━━━━╮**\n**[ 🎥 ] Lᴇᴄ ɪᴅ. »** **{str(count).zfill(3)}**\n**╰━━━━━━━━━━━╯**\n**📲 APP NAME »** **||🔰 {CR}||**\n\n**➭Tɪᴛᴛʟᴇ »** **`{name1}` [{res}].jpg**\n```BATCH NAME » \n{b_name}```\n\n**📛 Dᴏᴡɴʟᴏᴀᴅᴇᴅ Bʏ »** **『Sᴀʏᴇ࿐🐦‍🔥』**'
-                cccpvod = f'**╭━━━━━━━━━━━╮**\n**[ 🎥 ] Lᴇᴄ ɪᴅ. »** **{str(count).zfill(3)}**\n**╰━━━━━━━━━━━╯**\n**📲 APP NAME »** **||🔰 {CR}||**\n\n**➭Tɪᴛᴛʟᴇ »** **`{name1}` [{res}].mp4**\n\n<a href="{urlcpvod}">__**𝙲𝚕𝚒𝚌𝚔 𝙷𝚎𝚛𝚎 𝚝𝚘 𝚆𝚊𝚝𝚌𝚑 𝚂𝚝𝚛𝚎𝚊𝚖**__</a>\n𝙻𝚒𝚗𝚔 » {link0}\n\n```BATCH NAME » \n{b_name}```\n\n**📛 Dᴏᴡɴʟᴏᴀᴅᴇᴅ Bʏ »** **『Sᴀʏᴇ࿐🐦‍🔥』**'
-                ccyt = f'**╭━━━━━━━━━━━╮**\n**[ 🎥 ] Lᴇᴄ ɪᴅ. »** **{str(count).zfill(3)}**\n**╰━━━━━━━━━━━╯**\n**📲 APP NAME »** **||🔰 {CR}||**\n\n**➭Tɪᴛᴛʟᴇ »** **`{name1}` [{res}].mp4**\n\n<a href="{url}">__**𝙲𝚕𝚒𝚌𝚔 𝙷𝚎𝚛𝚎 𝚝𝚘 𝚆𝚊𝚝𝚌𝚑 𝚂𝚝𝚛𝚎𝚊𝚖**__</a>\n\n```BATCH NAME » \n{b_name}```\n\n**📛 Dᴏᴡɴʟᴏᴀᴅᴇᴅ Bʏ »** **『Sᴀʏᴇ࿐🐦‍🔥』**'
+                cc = f'**╭━━━━━━━━━━━╮**\n**[ 🎥 ] Lᴇᴄ ɪᴅ. »** **{str(count).zfill(3)}**\n**╰━━━━━━━━━━━╯**\n**📲 APP NAME »** **||🔰 {CR}||**\n\n**➭Tɪᴛᴛʟᴇ »** **`{name1}`** **[{res}].mp4**\n```BATCH NAME » \n{b_name}```\n**📛 Dᴏᴡɴʟᴏᴀᴅᴇᴅ Bʏ »** **『Sᴀʏᴇ࿐🐦‍🔥』**'
+                cc1 = f'**╭━━━━━━━━━━━╮**\n**[ 📁 ] Pᴅғ ɪᴅ. »** **{str(count).zfill(3)}**\n**╰━━━━━━━━━━━╯**\n**📲 APP NAME »** **||🔰 {CR}||**\n\n**➭Tɪᴛᴛʟᴇ »** **`{name1}`** **[{res}].pdf**\n```BATCH NAME » \n{b_name}```\n**📛 Dᴏᴡɴʟᴏᴀᴅᴇᴅ Bʏ »** **『Sᴀʏᴇ࿐🐦‍🔥』**'
+                cczip = f'**╭━━━━━━━━━━━╮**\n**[ 🎥 ] Lᴇᴄ ɪᴅ. »** **{str(count).zfill(3)}**\n**╰━━━━━━━━━━━╯**\n**📲 APP NAME »** **||🔰 {CR}||**\n\n**➭Tɪᴛᴛʟᴇ »** **`{name1}`** **[{res}].zip**\n```BATCH NAME » \n{b_name}```\n**📛 Dᴏᴡɴʟᴏᴀᴅᴇᴅ Bʏ »** **『Sᴀʏᴇ࿐🐦‍🔥』**'  
+                ccimg = f'**╭━━━━━━━━━━━╮**\n**[ 🎥 ] Lᴇᴄ ɪᴅ. »** **{str(count).zfill(3)}**\n**╰━━━━━━━━━━━╯**\n**📲 APP NAME »** **||🔰 {CR}||**\n\n**➭Tɪᴛᴛʟᴇ »** **`{name1}`** **[{res}].jpg**\n```BATCH NAME » \n{b_name}```\n**📛 Dᴏᴡɴʟᴏᴀᴅᴇᴅ Bʏ »** **『Sᴀʏᴇ࿐🐦‍🔥』**'
+                cccpvod = f'**╭━━━━━━━━━━━╮**\n**[ 🎥 ] Lᴇᴄ ɪᴅ. »** **{str(count).zfill(3)}**\n**╰━━━━━━━━━━━╯**\n**📲 APP NAME »** **||🔰 {CR}||**\n\n**➭Tɪᴛᴛʟᴇ »** **`{name1}`** **[{res}].mp4**\n\n<a href="{urlcpvod}">__**𝙲𝚕𝚒𝚌𝚔 𝙷𝚎𝚛𝚎 𝚝𝚘 𝚆𝚊𝚝𝚌𝚑 𝚂𝚝𝚛𝚎𝚊𝚖**__</a>\n𝙻𝚒𝚗𝚔 » {link0}\n\n```BATCH NAME » \n{b_name}```\n**📛 Dᴏᴡɴʟᴏᴀᴅᴇᴅ Bʏ »** **『Sᴀʏᴇ࿐🐦‍🔥』**'
+                ccyt = f'**╭━━━━━━━━━━━╮**\n**[ 🎥 ] Lᴇᴄ ɪᴅ. »** **{str(count).zfill(3)}**\n**╰━━━━━━━━━━━╯**\n**📲 APP NAME »** **||🔰 {CR}||**\n\n**➭Tɪᴛᴛʟᴇ »** **`{name1}`** **[{res}].mp4**\n\n<a href="{url}">__**𝙲𝚕𝚒𝚌𝚔 𝙷𝚎𝚛𝚎 𝚝𝚘 𝚆𝚊𝚝𝚌𝚑 𝚂𝚝𝚛𝚎𝚊𝚖**__</a>\n\n```BATCH NAME » \n{b_name}```\n**📛 Dᴏᴡɴʟᴏᴀᴅᴇᴅ Bʏ »** **『Sᴀʏᴇ࿐🐦‍🔥』**'
                                  
                 if "drive" in url:
                     try:
